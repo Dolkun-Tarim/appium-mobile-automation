@@ -7,3 +7,6 @@ The following test cases are covered the Java Appium TestNG BrowserStack automat
 - Verify that a user should be able to allow locations while using the app. 
 - Verify that a user should see the favorite leagues and teams on the favorite nav bar. 
 - Verify that a user should be able to navigate between leagues on the favorite nav bar. 
+
+
+**Note**: future test cases will be added to the above list.
