@@ -47,4 +47,11 @@ public class FavoriteTeamPage {
         return favoriteLeagueAndTeamsNavBar.isDisplayed();
     }
 
+    public boolean verifyFavoriteTeamSearchField()
+    {
+        WebElement favoriteTeamSearchInput=driver.findElement(AppiumBy.id("com.fivemobile.thescore:id/search_bar_placeholder"));
+        functionLibrary.waitUntilElementIsVisible(favoriteTeamSearchInput);
+        return favoriteTeamSearchInput.isDisplayed();
+    }
+
 }

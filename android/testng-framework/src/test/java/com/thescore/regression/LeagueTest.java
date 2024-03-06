@@ -50,6 +50,9 @@ public class LeagueTest extends AppiumBaseTest {
         commonPage.clickAllowLocationButton();
         //find While using the app button and click
         commonPage.clickAllowLocationWhileUsingButton();
+        //verify the search field in the team page
+        FavoriteTeamPage favoriteTeamPage=new FavoriteTeamPage(driver);
+        Assert.assertTrue(favoriteTeamPage.verifyFavoriteTeamSearchField());
 
     }
     @Test(description = "add favorite teams test",dependsOnGroups ="tailoredContent",dataProvider = "teamData",groups = "favoriteTeams")
